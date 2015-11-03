@@ -1,0 +1,5 @@
+python-openstackdocstheme (1.2.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #807039)
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 05 Oct 2015 10:48:26 +0200
