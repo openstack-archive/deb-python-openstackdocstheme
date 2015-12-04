@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+rm openstackdocstheme/theme/openstackdocs/static/js/bootstrap.min.js
+ln -s /usr/share/javascript/bootstrap/js/bootstrap.min.js openstackdocstheme/theme/openstackdocs/static/js/bootstrap.min.js
+rm openstackdocstheme/theme/openstackdocs/static/js/jquery-1.11.3.js
+ln -s /usr/share/javascript/jquery/jquery.min.js openstackdocstheme/theme/openstackdocs/static/js/jquery-1.11.3.js
