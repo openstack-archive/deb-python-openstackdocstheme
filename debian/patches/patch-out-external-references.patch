@@ -1,0 +1,104 @@
+Description: Save Debian user privacy
+ The OpenStack theme is doing loads and loads of calls to random websites which
+ could potentially (and most probably do) web browsing statistics.
+ .
+ This patch is an attempt to save Debian users from this uglyness.
+ .
+ Considering the amount of cruft I've seen, it's possible that I didn't remove
+ it all. If you see some more, please let me know.
+Forwarded: not-needed
+Last-Update: 2015-12-04
+
+--- python-openstackdocstheme-1.2.5+dfsg1.orig/openstackdocstheme/theme/openstackdocs/css.html
++++ python-openstackdocstheme-1.2.5+dfsg1/openstackdocstheme/theme/openstackdocs/css.html
+@@ -4,17 +4,6 @@
+ <!-- Pygments CSS -->
+ <link href="{{pathto('_static/css/native.css', 1)}}" rel="stylesheet">
+ 
+-<!-- Fonts -->
+-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+-
+ <!-- Custom CSS -->
+ <link href="{{pathto('_static/css/combined.css', 1)}}" rel="stylesheet">
+ <link href="{{pathto('_static/css/styles.css', 1)}}" rel="stylesheet">
+-
+-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+-<!--[if lt IE 9]>
+-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+-<![endif]-->
+--- python-openstackdocstheme-1.2.5+dfsg1.orig/openstackdocstheme/theme/openstackdocs/header.html
++++ python-openstackdocstheme-1.2.5+dfsg1/openstackdocstheme/theme/openstackdocs/header.html
+@@ -12,24 +12,6 @@
+       </div>
+       <div class="search-icon show"><i class="fa fa-search"></i> Search</div></div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+-      <div class="search-container tiny">
+-        <div id="gcse">
+-          <script type="text/javascript">
+-(function() {
+-  var cx = '000108871792296872333:noj9nikm74i';
+-  var gcse = document.createElement('script');
+-  gcse.type = 'text/javascript';
+-  gcse.async = true;
+-  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+-      '//www.google.com/cse/cse.js?cx=' + cx;
+-  var s = document.getElementsByTagName('script')[0];
+-  s.parentNode.insertBefore(gcse, s);
+-})();
+-          </script>
+-          <gcse:search gname="standard"></gcse:search>
+-        </div>
+-        <i class="fa fa-times close-search"></i>
+-      </div>
+       <ul class="nav navbar-nav navbar-main show">
+         <li>
+           <div id="gcse-mobile">
+--- python-openstackdocstheme-1.2.5+dfsg1.orig/openstackdocstheme/theme/openstackdocs/layout.html
++++ python-openstackdocstheme-1.2.5+dfsg1/openstackdocstheme/theme/openstackdocs/layout.html
+@@ -13,16 +13,6 @@
+ {% if favicon %}
+     <link rel="shortcut icon" href="{{ pathto('_static/favicon.ico') }}"/>
+ {% endif %}
+-<!-- Google Analytics -->
+-<script>
+-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+-
+-ga('create', 'UA-17511903-1', 'auto');
+-ga('send', 'pageview');
+-</script>
+ <!-- End Google Analytics -->
+   </head>
+   <body>
+--- python-openstackdocstheme-1.2.5+dfsg1.orig/openstackdocstheme/theme/openstackdocs/script_footer.html
++++ python-openstackdocstheme-1.2.5+dfsg1/openstackdocstheme/theme/openstackdocs/script_footer.html
+@@ -50,17 +50,3 @@
+ 
+     logABug(bugTitle, fieldComment, fieldTags);
+ </script>
+-
+-<!-- Javascript for search boxes (both sidebar and top nav) -->
+-<script type="text/javascript">
+-(function() {
+-var cx = '000108871792296872333:noj9nikm74i';
+-var gcse = document.createElement('script');
+-gcse.type = 'text/javascript';
+-gcse.async = true;
+-gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+-'//www.google.com/cse/cse.js?cx=' + cx;
+-var s = document.getElementsByTagName('script')[0];
+-s.parentNode.insertBefore(gcse, s);
+-})();
+-</script>
+--- python-openstackdocstheme-1.2.5+dfsg1.orig/openstackdocstheme/theme/openstackdocs/script_search.html
++++ python-openstackdocstheme-1.2.5+dfsg1/openstackdocstheme/theme/openstackdocs/script_search.html
+@@ -1,4 +1,3 @@
+-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ <script type="text/javascript">
+  //<![CDATA[
+ google.load('search', '1', {
