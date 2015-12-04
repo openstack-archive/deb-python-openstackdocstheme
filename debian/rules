@@ -27,6 +27,12 @@ ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
 	PYTHONPATH=. sphinx-build -b html doc/source debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html
 	rm debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html/search.html
 	dh_sphinxdoc -O--buildsystem=python_distutils
+
+	# Fixed the included JS
+	rm -r debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html/_static/jquery.js
+	ln -s /usr/share/javascript/jquery/jquery.js debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html/_static/jquery.js
+	rm -r debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html/_static/underscore.js
+	ln -s /usr/share/javascript/underscore/underscore.js debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html/_static/underscore.js
 endif
 
 override_dh_clean:
