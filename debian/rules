@@ -21,6 +21,8 @@ override_dh_auto_install:
 			--root $(CURDIR)/debian/python3-openstackdocstheme; \
 	done
 	rm -rf $(CURDIR)/debian/python*-openstackdocstheme/usr/lib/python*/dist-packages/*.pth
+	cp -auxf openstackdocstheme/theme $(CURDIR)/debian/python-openstackdocstheme/usr/lib/python2.7/dist-packages/openstackdocstheme
+	cp -auxf openstackdocstheme/theme $(CURDIR)/debian/python3-openstackdocstheme/usr/lib/python3/dist-packages/openstackdocstheme
 
 override_dh_sphinxdoc:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
