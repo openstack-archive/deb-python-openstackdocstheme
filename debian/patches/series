@@ -1,2 +1,3 @@
 allow-any-pbr-version.patch
 patch-out-external-references.patch
+remove-google-search.patch
