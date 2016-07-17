@@ -3,6 +3,8 @@ python-openstackdocstheme (1.3.0+dfsg1-1) UNRELEASED; urgency=medium
   * New upstream release
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
+  * Removed d/p/allow-any-pbr-version.patch (Applied upstream)
+  * Rebased d/p/patch-out-external-references.patch
 
  -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:42:41 +0100
 
