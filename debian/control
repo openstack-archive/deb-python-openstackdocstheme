@@ -25,6 +25,8 @@ Package: python-openstackdocstheme
 Architecture: all
 Depends: python-pbr (>= 1.6),
          python-requests (>= 2.8.1),
+         libjs-bootstrap,
+         libjs-jquery,
          ${misc:Depends},
          ${python:Depends},
 Suggests: python-openstackdocstheme-doc,
@@ -38,6 +40,8 @@ Package: python3-openstackdocstheme
 Architecture: all
 Depends: python3-pbr (>= 1.6),
          python3-requests (>= 2.8.1),
+         libjs-bootstrap,
+         libjs-jquery,
          ${misc:Depends},
          ${python3:Depends},
 Suggests: python-openstackdocstheme-doc,
