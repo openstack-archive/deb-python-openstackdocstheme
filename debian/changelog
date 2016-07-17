@@ -11,7 +11,7 @@ python-openstackdocstheme (1.3.0+dfsg1-1) UNRELEASED; urgency=medium
     - Added myself for Debian part
   * Bumped standards version to 3.9.8 (no changes needed)
   * Don't override dh_auto_clean
-  * Added libjs-bootstrap and libjs-jquery to dependencies
+  * Added libjs-bootstrap to dependencies
   * Symlink Bootstrap and jQuery JS libs during build
   * Use *.install and *.links inside of calling cp/ln in d/rules
   * Added d/p/dont-require-git.patch
