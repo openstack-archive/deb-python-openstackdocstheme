@@ -24,6 +24,20 @@ override_dh_auto_install:
 	cp -auxf openstackdocstheme/theme $(CURDIR)/debian/python-openstackdocstheme/usr/lib/python2.7/dist-packages/openstackdocstheme
 	cp -auxf openstackdocstheme/theme $(CURDIR)/debian/python3-openstackdocstheme/usr/lib/python3/dist-packages/openstackdocstheme
 
+	ln -s /usr/share/javascript/jquery/jquery.js \
+		$(CURDIR)/debian/python-openstackdocstheme/usr/lib/python2.7/dist-packages/openstackdocstheme/theme/openstackdocs/static/js/jquery-1.11.3.js
+	ln -s /usr/share/javascript/bootstrap/js/bootstrap.min.js \
+		$(CURDIR)/debian/python-openstackdocstheme/usr/lib/python2.7/dist-packages/openstackdocstheme/theme/openstackdocs/static/js/bootstrap.min.js
+	ln -s /usr/share/javascript/bootstrap/css/bootstrap.min.css \
+		$(CURDIR)/debian/python-openstackdocstheme/usr/lib/python2.7/dist-packages/openstackdocstheme/theme/openstackdocs/static/css/bootstrap.min.css
+
+	ln -s /usr/share/javascript/jquery/jquery.js \
+		$(CURDIR)/debian/python3-openstackdocstheme/usr/lib/python3/dist-packages/openstackdocstheme/theme/openstackdocs/static/js/jquery-1.11.3.js
+	ln -s /usr/share/javascript/bootstrap/js/bootstrap.min.js \
+		$(CURDIR)/debian/python3-openstackdocstheme/usr/lib/python3/dist-packages/openstackdocstheme/theme/openstackdocs/static/js/bootstrap.min.js
+	ln -s /usr/share/javascript/bootstrap/css/bootstrap.min.css \
+		$(CURDIR)/debian/python3-openstackdocstheme/usr/lib/python3/dist-packages/openstackdocstheme/theme/openstackdocs/static/css/bootstrap.min.css
+
 override_dh_sphinxdoc:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
 	PYTHONPATH=. sphinx-build -b html doc/source debian/python-openstackdocstheme-doc/usr/share/doc/python-openstackdocstheme-doc/html
