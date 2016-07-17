@@ -1,2 +1,4 @@
 patch-out-external-references.patch
 remove-google-search.patch
+dont-require-git.patch
+use-libjs-jquery.patch

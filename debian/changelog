@@ -14,6 +14,8 @@ python-openstackdocstheme (1.3.0+dfsg1-1) UNRELEASED; urgency=medium
   * Added libjs-bootstrap and libjs-jquery to dependencies
   * Symlink Bootstrap and jQuery JS libs during build
   * Use *.install and *.links inside of calling cp/ln in d/rules
+  * Added d/p/dont-require-git.patch
+  * Added d/p/use-libjs-jquery.patch
 
  -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:42:41 +0100
 

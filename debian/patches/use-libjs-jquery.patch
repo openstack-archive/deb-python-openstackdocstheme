@@ -1,0 +1,9 @@
+--- a/openstackdocstheme/theme/openstackdocs/script_footer.html
++++ b/openstackdocstheme/theme/openstackdocs/script_footer.html
+@@ -1,5 +1,5 @@
+ <!-- jQuery -->
+-<script type="text/javascript" src="{{pathto('_static/js/jquery-1.11.3.js', 1)}}"></script>
++<script type="text/javascript" src="{{pathto('_static/jquery.js', 1)}}"></script>
+ 
+ <!-- Bootstrap JavaScript -->
+ <script type="text/javascript" src="{{pathto('_static/js/bootstrap.min.js', 1)}}"></script>

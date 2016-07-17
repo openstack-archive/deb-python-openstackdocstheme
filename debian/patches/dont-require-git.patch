@@ -1,0 +1,36 @@
+From 83086d7c07d9fd0a19f10b6dc835301b672ffa1f Mon Sep 17 00:00:00 2001
+From: Ondřej Nový <ondrej.novy@firma.seznam.cz>
+Date: Sun, 17 Jul 2016 22:26:48 +0200
+Subject: [PATCH] Allow to build docs without git command
+Forwarded: https://review.openstack.org/#/c/343344/
+
+Change-Id: If9177436c116f398e5956f2918d097c621c97157
+---
+
+diff --git a/doc/source/conf.py b/doc/source/conf.py
+index ac7a41f..eaaf732 100644
+--- a/doc/source/conf.py
++++ b/doc/source/conf.py
+@@ -15,6 +15,7 @@
+ import subprocess
+ import sys
+ import os
++import warnings
+ 
+ import openstackdocstheme
+ 
+@@ -69,8 +70,12 @@
+ # These variables are passed to the logabug code via html_context.
+ giturl = u'http://git.openstack.org/cgit/openstack/openstackdocstheme/tree/doc/source'
+ git_cmd = ["/usr/bin/git", "rev-parse", "HEAD"]
+-gitsha = subprocess.Popen(
+-    git_cmd, stdout=subprocess.PIPE).communicate()[0].strip('\n')
++try:
++    gitsha = subprocess.Popen(
++        git_cmd, stdout=subprocess.PIPE).communicate()[0].strip('\n')
++except OSError:
++    warnings.warn('Can not get gitsha from git repository. Setting to None')
++    gitsha = None
+ bug_tag = "doc-builds"
+ html_context = {"gitsha": gitsha, "bug_tag": bug_tag, "giturl" : giturl}
+ 
