@@ -1,5 +1,6 @@
-python-openstackdocstheme (1.2.5+dfsg1-2) UNRELEASED; urgency=medium
+python-openstackdocstheme (1.3.0+dfsg1-1) UNRELEASED; urgency=medium
 
+  * New upstream release
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
 
