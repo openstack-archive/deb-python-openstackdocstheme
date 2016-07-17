@@ -11,6 +11,7 @@ License: Apache-2
 
 Files: debian/*
 Copyright: (c) 2014-2016, Thomas Goirand <zigo@debian.org>
+           (c) 2016, Ondřej Nový <onovy@debian.org>
 License: Apache-2
 
 License: Apache-2
