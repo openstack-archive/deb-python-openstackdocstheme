@@ -9,12 +9,10 @@ Build-Depends: debhelper (>= 9),
                python-all,
                python-pbr (>= 1.6),
                python-setuptools,
-               python-sphinx,
                python3-all,
                python3-pbr (>= 1.6),
                python3-setuptools,
-Build-Depends-Indep: python-oslosphinx (>= 2.5.0),
-                     python-requests (>= 2.8.1),
+Build-Depends-Indep: python-requests (>= 2.8.1),
                      python3-requests (>= 2.8.1),
 Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-openstackdocstheme.git/
@@ -28,7 +26,6 @@ Depends: python-pbr (>= 1.6),
          libjs-bootstrap,
          ${misc:Depends},
          ${python:Depends},
-Suggests: python-openstackdocstheme-doc,
 Description: extension support for Sphin OpenStack docs - Python 2.7
  Theme and extension support for Sphinx documentation that is published to
  docs.openstack.org. Intended for use by OpenStack projects.
@@ -42,20 +39,8 @@ Depends: python3-pbr (>= 1.6),
          libjs-bootstrap,
          ${misc:Depends},
          ${python3:Depends},
-Suggests: python-openstackdocstheme-doc,
 Description: extension support for Sphin OpenStack doc - Python 3.x
  Theme and extension support for Sphinx documentation that is published to
  docs.openstack.org. Intended for use by OpenStack projects.
  .
  This package contains the Python 3.x module.
-
-Package: python-openstackdocstheme-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends},
-         ${sphinxdoc:Depends},
-Description: extension support for Sphin OpenStack doc - doc
- Theme and extension support for Sphinx documentation that is published to
- docs.openstack.org. Intended for use by OpenStack projects.
- .
- This package contains the documentation.
