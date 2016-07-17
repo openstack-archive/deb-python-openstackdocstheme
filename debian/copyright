@@ -1,6 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: openstackdocstheme
 Source: http://docs.openstack.org/
+Files-Excluded: openstackdocstheme/theme/openstackdocs/static/css/bootstrap.min.css
+                openstackdocstheme/theme/openstackdocs/static/js/bootstrap.min.js
+                openstackdocstheme/theme/openstackdocs/static/js/jquery-1.11.3.js
 
 Files: *
 Copyright: (c) 2013-2016, OpenStack Foundation <openstack-dev@lists.openstack.org>
