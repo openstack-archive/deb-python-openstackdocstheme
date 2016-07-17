@@ -1,3 +1,8 @@
+Description: Use Sphinx jQuery, not embedded one
+Author: Ondřej Nový <ondrej.novy@firma.seznam.cz>
+Last-Update: 2016-01-22
+Forwarded: not-needed
+
 --- a/openstackdocstheme/theme/openstackdocs/script_footer.html
 +++ b/openstackdocstheme/theme/openstackdocs/script_footer.html
 @@ -1,5 +1,5 @@
