@@ -7,15 +7,15 @@ Build-Depends: debhelper (>= 9),
                dh-python,
                openstack-pkg-tools,
                python-all,
-               python-pbr (>= 0.6),
+               python-pbr (>= 1.6),
                python-setuptools,
                python-sphinx,
                python3-all,
-               python3-pbr (>= 0.6),
+               python3-pbr (>= 1.6),
                python3-setuptools,
-Build-Depends-Indep: python-oslosphinx,
-                     python-requests,
-                     python3-requests,
+Build-Depends-Indep: python-oslosphinx (>= 2.5.0),
+                     python-requests (>= 2.8.1),
+                     python3-requests (>= 2.8.1),
 Standards-Version: 3.9.6
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-openstackdocstheme.git/
 Vcs-Git: https://anonscm.debian.org/git/openstack/python-openstackdocstheme.git
@@ -23,8 +23,8 @@ Homepage: http://docs.openstack.org/
 
 Package: python-openstackdocstheme
 Architecture: all
-Depends: python-pbr (>= 0.6),
-         python-requests,
+Depends: python-pbr (>= 1.6),
+         python-requests (>= 2.8.1),
          ${misc:Depends},
          ${python:Depends},
 Suggests: python-openstackdocstheme-doc,
@@ -36,8 +36,8 @@ Description: extension support for Sphin OpenStack docs - Python 2.7
 
 Package: python3-openstackdocstheme
 Architecture: all
-Depends: python3-pbr (>= 0.6),
-         python3-requests,
+Depends: python3-pbr (>= 1.6),
+         python3-requests (>= 2.8.1),
          ${misc:Depends},
          ${python3:Depends},
 Suggests: python-openstackdocstheme-doc,
