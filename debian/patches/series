@@ -2,3 +2,4 @@ Replace_minified_bootstrap_jss_and_css.patch
 patch-out-external-references.patch
 remove-google-search.patch
 replace-minified-jquery.patch
+remove-top-menu.patch
