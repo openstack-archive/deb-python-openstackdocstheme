@@ -1,3 +1,4 @@
+Replace_minified_bootstrap_jss_and_css.patch
 patch-out-external-references.patch
 remove-google-search.patch
 use-libjs-jquery.patch

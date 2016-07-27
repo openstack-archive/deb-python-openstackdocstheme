@@ -1,6 +1,7 @@
-python-openstackdocstheme (1.4.0+dfsg1-1) experimental; urgency=medium
+python-openstackdocstheme (1.4.0-1) experimental; urgency=medium
 
   * New upstream release.
+  * Using a patch instead of using +dfsg1.
   * Fixed (build-)depends for this release.
   * Using pkgos-dh_auto_install from openstack-pkg-tools >= 52~.
   * Refreshed patches.
