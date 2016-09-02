@@ -1,3 +1,9 @@
+python-openstackdocstheme (1.5.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- David Della Vecchia <ddv@canonical.com>  Fri, 02 Sep 2016 10:52:56 -0400
+
 python-openstackdocstheme (1.4.0-2) experimental; urgency=medium
 
   * Add remove-top-menu.patch.
