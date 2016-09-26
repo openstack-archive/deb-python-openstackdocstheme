@@ -16,8 +16,8 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: python-requests (>= 2.10.0),
                      python3-requests (>= 2.10.0),
 Standards-Version: 3.9.8
-Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-openstackdocstheme
-Vcs-Git: https://git.openstack.org/openstack/deb-python-openstackdocstheme
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-openstackdocstheme?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-openstackdocstheme -b debian/newton
 Homepage: http://docs.openstack.org/
 
 Package: python-openstackdocstheme

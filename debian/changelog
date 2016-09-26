@@ -1,3 +1,10 @@
+python-openstackdocstheme (1.5.0-2) UNRELEASED; urgency=medium
+
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Use correct branch in Vcs-* fields
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 26 Sep 2016 19:12:00 +0200
+
 python-openstackdocstheme (1.5.0-1) experimental; urgency=medium
 
   [ David Della Vecchia ]
