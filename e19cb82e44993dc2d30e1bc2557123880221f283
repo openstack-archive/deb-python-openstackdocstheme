@@ -1,0 +1,8 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Workflow+1: Andreas Jaeger <jaegerandi@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 03 Oct 2016 12:28:55 +0000
+Reviewed-on: https://review.openstack.org/380922
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
