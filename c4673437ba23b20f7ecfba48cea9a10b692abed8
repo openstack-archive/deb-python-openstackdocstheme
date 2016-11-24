@@ -1,0 +1,12 @@
+Code-Review+2: Anne Gentle <annegentle@justwriteclick.com>
+Code-Review+1: Thomas Goirand <thomas@goirand.fr>
+Code-Review+1: Ondřej Nový <novy@ondrej.org>
+Code-Review+2: Christian Berendt <berendt@betacloud-solutions.de>
+Code-Review+1: Brian Moss <kallimachos@gmail.com>
+Workflow+1: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 24 Nov 2016 01:29:53 +0000
+Reviewed-on: https://review.openstack.org/333573
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
