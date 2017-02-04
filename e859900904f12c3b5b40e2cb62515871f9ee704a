@@ -1,0 +1,9 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+2: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>
+Workflow+1: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Sat, 04 Feb 2017 01:47:26 +0000
+Reviewed-on: https://review.openstack.org/427025
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
