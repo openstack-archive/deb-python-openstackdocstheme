@@ -1,0 +1,9 @@
+Code-Review+2: Lana Brindley <openstack@lanabrindley.com>
+Code-Review+2: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>
+Workflow+1: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 17 Feb 2017 01:09:00 +0000
+Reviewed-on: https://review.openstack.org/435161
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
