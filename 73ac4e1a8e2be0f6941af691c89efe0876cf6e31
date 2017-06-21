@@ -1,0 +1,10 @@
+Code-Review+2: Anne Gentle <annegentle@justwriteclick.com>
+Code-Review+1: Ian Y. Choi <ianyrchoi@gmail.com>
+Code-Review+2: Alexandra Settle <a.settle@outlook.com>
+Workflow+1: Alexandra Settle <a.settle@outlook.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Wed, 21 Jun 2017 16:01:54 +0000
+Reviewed-on: https://review.openstack.org/475845
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
