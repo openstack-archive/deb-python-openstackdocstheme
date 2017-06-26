@@ -1,0 +1,13 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+1: Akihiro Motoki <amotoki@gmail.com>
+Code-Review+1: Monty Taylor <mordred@inaugust.com>
+Code-Review+1: Petr Kovar <pkovar@redhat.com>
+Code-Review+1: Doug Hellmann <doug@doughellmann.com>
+Code-Review+2: Alexandra Settle <a.settle@outlook.com>
+Workflow+1: Alexandra Settle <a.settle@outlook.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 26 Jun 2017 15:03:14 +0000
+Reviewed-on: https://review.openstack.org/476997
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
