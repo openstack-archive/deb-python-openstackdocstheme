@@ -1,0 +1,8 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Workflow+1: Anne Gentle <annegentle@justwriteclick.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 27 Jun 2017 20:16:42 +0000
+Reviewed-on: https://review.openstack.org/478205
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
