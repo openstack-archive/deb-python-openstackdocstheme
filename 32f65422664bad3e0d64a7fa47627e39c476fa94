@@ -1,0 +1,9 @@
+Code-Review+2: Doug Hellmann <doug@doughellmann.com>
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Workflow+1: Andreas Jaeger <jaegerandi@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 27 Jun 2017 05:03:49 +0000
+Reviewed-on: https://review.openstack.org/477635
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
