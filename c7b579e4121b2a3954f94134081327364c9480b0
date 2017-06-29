@@ -1,0 +1,9 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+2: Chason Chan <chason.chan@foxmail.com>
+Workflow+1: Chason Chan <chason.chan@foxmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 29 Jun 2017 09:47:20 +0000
+Reviewed-on: https://review.openstack.org/478686
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
