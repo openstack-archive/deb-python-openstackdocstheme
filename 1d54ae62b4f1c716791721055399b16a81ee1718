@@ -1,0 +1,11 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+1: Jeremy Stanley <fungi@yuggoth.org>
+Code-Review+1: James E. Blair <corvus@inaugust.com>
+Code-Review+2: Anne Gentle <annegentle@justwriteclick.com>
+Workflow+1: Anne Gentle <annegentle@justwriteclick.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 30 Jun 2017 17:58:12 +0000
+Reviewed-on: https://review.openstack.org/479355
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
