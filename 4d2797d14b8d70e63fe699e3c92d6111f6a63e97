@@ -1,0 +1,10 @@
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+1: Graham Hayes <ghayes@suse.de>
+Code-Review+2: Alexandra Settle <a.settle@outlook.com>
+Workflow+1: Alexandra Settle <a.settle@outlook.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 14 Jul 2017 15:15:15 +0000
+Reviewed-on: https://review.openstack.org/483493
+Project: openstack/deb-python-openstackdocstheme
+Branch: refs/heads/master
