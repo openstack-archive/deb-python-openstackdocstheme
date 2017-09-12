@@ -1,4 +1,0 @@
----
-features:
-  - Initial integration of storyboard.openstack.org for report a bug,
-    set ``bug_project`` to the number of the project to use it.

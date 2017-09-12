@@ -1,5 +1,0 @@
----
-fixes:
-  - |
-    The navigation links now correctly strip HTML from titles, allowing for
-    use of markup like literal backticks in titles.
